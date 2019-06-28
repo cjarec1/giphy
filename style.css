@@ -1,0 +1,65 @@
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contained {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 1rem;
+    border: 1px solid gray;
+  }
+
+  .vid{
+      /* background-color: #923456; */
+      padding: 10px;
+      margin: 10px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .outer{
+    display: inline;
+    float: left;
+}
+
+  .butn{
+      display: inline-flex;
+      flex-direction: column;
+      border-radius: 10em;
+      padding: .3rem 1rem;
+      background-color: #59698d !important;
+      color: #fff;
+      margin: .375rem;
+      border: 0;
+      font-size: 12px;
+      /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+  }
+
+  .butn:active{
+      background-color: #455475 !important;
+  }
+
+  #copyUrl{
+    height: 90%;
+    width: 70%;
+    font-size: 12px;
+    display: inline-flex;
+  }
+
+  @media screen and (min-width: 600px) {
+    .card {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .card {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
