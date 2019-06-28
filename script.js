@@ -2,7 +2,7 @@
 function getRandom() {
 
     for(let x = 0; x < 3; x++){
-        var xhr = $.get("http://api.giphy.com/v1/gifs/random?tag=&api_key=RkZMkXQ7kzeKtcu6e2IjSq5cOHT6Svm0");
+        var xhr = $.get("https://api.giphy.com/v1/gifs/random?tag=&api_key=RkZMkXQ7kzeKtcu6e2IjSq5cOHT6Svm0");
         xhr.done(function (response) {
     
             console.log("success got data", response);
@@ -22,7 +22,7 @@ function getSearch() {
 
     var input = $("#search").val()
     $('.results').empty()
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + input + "&api_key=RkZMkXQ7kzeKtcu6e2IjSq5cOHT6Svm0&limit=30");
+    var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + input + "&api_key=RkZMkXQ7kzeKtcu6e2IjSq5cOHT6Svm0&limit=30");
     xhr.done(function (response) {
 
         console.log("success got data", response);
